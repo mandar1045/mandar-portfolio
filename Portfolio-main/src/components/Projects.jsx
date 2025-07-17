@@ -59,7 +59,7 @@ const Projects = () => {
               <img src="/assets/Screenshot 2025-07-05 125642.png" alt="Project" />
             </figure>
             <div className="card-body items-center md:items-start">
-              <h2 className="card-title">GearUp</h2>
+              <h2 className="card-title">GearUp Sports</h2>
               <p className="text-center md:text-left">
                 E-Commerce website for the premium sports equipments
               </p>
