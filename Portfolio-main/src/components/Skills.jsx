@@ -49,6 +49,16 @@ const Skills = () => {
     threshold: 0.3,
     delay: 500,
   });
+  const { ref: progImg6Ref, inView: progImg6InView } = useInView({
+    triggerOnce: true,
+    threshold: 0.3,
+    delay: 500,
+  });
+  const { ref: progImg7Ref, inView: progImg7InView } = useInView({
+    triggerOnce: true,
+    threshold: 0.3,
+    delay: 500,
+  });
 
   const { ref: webDevSectionRef, inView: webDevSectionInView } = useInView({
     triggerOnce: true,
@@ -241,6 +251,32 @@ const Skills = () => {
                 src="/assets/sql.png"
                 alt="SQL"
                 ref={progImg5Ref}
+              />
+            </Magnet>
+         
+            <Magnet padding={50} disabled={false} magnetStrength={5}>
+              <img
+                className={`h-20 transition-transform hover:scale-110 ${
+                  progImg1InView
+                    ? "animate__animated animate__zoomIn animate__delay-0s"
+                    : "opacity-0"
+                }`}
+                src="/assets/Tux.png"
+                alt="Linux"
+                ref={progImg6Ref}
+              />
+            </Magnet>
+            
+            <Magnet padding={50} disabled={false} magnetStrength={5}>
+              <img
+                className={`h-20 transition-transform hover:scale-110 ${
+                  progImg1InView
+                    ? "animate__animated animate__zoomIn animate__delay-0s"
+                    : "opacity-0"
+                }`}
+                src="/assets/ubnuntu.png"
+                alt="Ubuntu"
+                ref={progImg7Ref}
               />
             </Magnet>
           </div>
