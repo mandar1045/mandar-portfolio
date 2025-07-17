@@ -128,7 +128,7 @@ const Journey = () => {
           Hire Me !
         </a>
         <a
-          href="https://docs.google.com/document/d/13ToGWcVPXMT84GA6Dmw-gf_ZbCDDcgjGlWjgPQmovh0/edit?tab=t.0"
+          href="https://drive.google.com/file/d/14RSVy3SEp7NxXz9Y_JFkPLVR9ko6O2oH/view?usp=drivesdk"
           className={`sexybutton ${
             button2InView
               ? "animate__animated animate__fadeInUp animate__delay-0s"
