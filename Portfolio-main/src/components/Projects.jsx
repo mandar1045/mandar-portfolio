@@ -21,6 +21,12 @@ const Projects = () => {
     delay: 200,
   });
 
+  const { ref: card2Ref, inView: card2InView } = useInView({
+    triggerOnce: true,
+    threshold: 0.3,
+    delay: 300,
+  });
+
   return (
     <div
       id="projects"
@@ -75,6 +81,42 @@ const Projects = () => {
                   className="btn btn-primary rounded-lg"
                   target="_blank"
                   href="https://gearupsports.vercel.app/"
+                >
+                  Live site
+                </a>
+              </div>
+            </div>
+          </div>
+        </Magnet>
+        <Magnet padding={50} disabled={false} magnetStrength={15}>
+          <div
+            className={`card bg-base-300 w-72 shadow-sm rounded-2xl p-5 ${
+              card2InView
+                ? "animate__animated animate__fadeInUp animate__delay-0s"
+                : "opacity-0"
+            }`}
+            ref={card2Ref}
+          >
+            <figure>
+              <img src="/assets/Screenshot from 2025-09-13 16-13-34.png" alt="Project" />
+            </figure>
+            <div className="card-body items-center md:items-start">
+              <h2 className="card-title">Yochat</h2>
+              <p className="text-center md:text-left">
+                Real time video calling and chatting website
+              </p>
+              <div className="card-actions justify-center md:justify-start">
+                <a
+                  className="btn btn-primary rounded-lg"
+                  target="_blank"
+                  href="https://github.com/mandar1045/videoChat"
+                >
+                  Github
+                </a>
+                <a
+                  className="btn btn-primary rounded-lg"
+                  target="_blank"
+                  href="https://yochat-2nay.onrender.com"
                 >
                   Live site
                 </a>
