@@ -77,7 +77,7 @@ const About = () => {
         <a
           target="_blank"
           rel="noopener noreferrer"
-          href="https://drive.google.com/file/d/1mWcAmRxFBBx04X5_2wvq5Gt6exemVysE/view"
+          href="https://drive.google.com/file/d/1mWcAmRxFBBx04X5_2wvq5Gt6exemVysE/view?usp=drivesdk"
           className={`sexybutton animate__animated ${
             inView ? "animate__fadeInUp" : ""
           } animate__delay-1700ms`}
